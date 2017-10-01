@@ -1,0 +1,9 @@
+.page {
+  background: $bg-green;
+
+  &__header {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+}
