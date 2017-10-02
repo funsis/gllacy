@@ -3,16 +3,14 @@
 
 <head>
   <meta charset="utf-8" />
-  <link rel="stylesheet" href="/css/normilize.css">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="css/normilize.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>GLLACY</title>
 </head>
 
 <body class="page">
-  <header class="page-header">
-    <div class="page-header__wrapper">
-      <nav class="main-nav">
-        <div class="main_nav__wrapper">
+  <header class="header page__header">
+      <nav class="main-nav header__main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <img class="main-nav__logo" src="img/logo.png" width="154" height="64" alt="gllacy">
@@ -44,10 +42,8 @@
               <a class="main-nav__link" href="#">О компании</a>
             </li>
           </ul>
-        </div>
       </nav>
-      <div class="user-block">
-        <div class="user-block__wrapper">
+      <div class="user-block header__user-block">
           <div class="search user-block__search">
             <a class="search-link" href="#">Поиск</a>
             <form class="search__form" action="index.html" method="post">
@@ -71,14 +67,13 @@
           </div>
         </div>
       </div>
-      <div class="shedule page-header__shedule">
+      <div class="shedule header__shedule">
         <p class="shedule__time">С 10 до 20, ежедневно</p>
         <p class="shedule__phone">8 812 450-25-25</p>
       </div>
     </div>
   </header>
-  <main class="page-main">
-    <div class="page-main__wrapper">
+  <main class="main page__main">
       <div class="slider">
         <div class="slider__slide">
           <b>Крем-брюле и пломбири с малиновым джемом</b>
@@ -93,8 +88,7 @@
           <a class="button button--big" href="#">Дайте оба!</a>
         </div>
       </div>
-      <div class="banners">
-        <div class="banners_wrapper">
+      <div class="banners main__banners">
           <section class="banner banners__banner banner--raspberry">
             <h2 class="banner__title">Малинка даром!</h2>
             <p class="banner__content">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
@@ -105,10 +99,8 @@
             <p class="banner__content">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
             <a class="button banner__button" href="#">Хочу шоколадки!</a>
           </section>
-        </div>
       </div>
-      <div class="products">
-        <div class="products__wrapper">
+      <div class="products main__products">
           <section class="product products__product">
             <img class="product__img" src="img/index_ice1.png" width="267" height="267">
             <p class="product__price"><span class="product__price-val"></span></p>
@@ -129,10 +121,8 @@
             <p class="product__price"><span class="product__price-value">415р</span>/кг</p>
             <p class="product__title">Сливочное крем-брюле с карамельной подливкой</p>
           </section>
-        </div>
       </div>
-      <section class="advantages">
-        <div class="advantages__wrapper">
+      <section class="advantages main__advantages">
           <h1 class="advantages__title">Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h1>
           <p class="advantages__item">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
           <p class="advantages__item">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
@@ -140,8 +130,7 @@
           <p class="advantages__item">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
         </div>
       </section>
-      <div class="blog-subscribtion">
-        <div class="blog-subscription__wrapper">
+      <div class="blog-subscribtion main__blog-subscribtion">
           <section class="blog">
             <p class="blog__text">Новое в нашем блоге</p>
             <h2 class="blog__title">10  способов сервировки фруктовых щербетов к столу</h2>
@@ -153,11 +142,9 @@
               <button class="button subscribtion__button" type="submit" name="subscribtion-button">Отправить</button>
             </form>
           </section>
-        </div>
       </div>
     </div>
-    <section class="map">
-      <div class="map__wrapper">
+    <section class="map main__map">
         <div class="adress-feedback map__adress-feedback">
           <div class="adress adress-feedback__adress">
             <p class="adress__text">Адрес главного офиса и офлайн магазина:</p>
@@ -169,11 +156,9 @@
             <p class="feedback__text"></p>
           </div>
         </div>
-      </div>
     </section>
   </main>
-  <footer class="page-footer">
-    <div class="page-footer__wrapper">
+  <footer class="footer page__footer">
       <section class="social">
         <a class="social__tw" href="#">Twiter</a>
         <a class="social__ig" href="#">Instagram</a>
@@ -189,7 +174,6 @@
       <section clas="copyright">
         <p class="copyright__text">Сделал <a class="copyright__linl" href="#">Funsis</a> в 2017.</p>
       </section>
-    </div>
   </footer>
 </body>
 
