@@ -1,11 +1,10 @@
 .header {
   @include row;
-  min-width: 850px;
-  max-width: 1150px;
 
   &__shedule {
     position: absolute;
     right: 0;
     bottom: 0;
+    margin-bottom:  -40px;
   }
 }

@@ -1,0 +1,13 @@
+.slider {
+  display: flex;
+  justify-content: space-around;
+
+  &__slide {
+    width: 665px;
+    border: 1px solid white;
+
+    &--hiden {
+      display: none;
+    }
+  }
+}

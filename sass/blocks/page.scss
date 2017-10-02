@@ -1,10 +1,12 @@
 .page {
   background: $bg-green;
-  border: 1px solid red;
 
   &__header {
     position: relative;
     margin: 0 auto;
     margin-top: 10px;
+    margin-bottom: 325px;
   }
+
+
 }

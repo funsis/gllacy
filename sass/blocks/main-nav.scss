@@ -1,3 +1,17 @@
 .main-nav {
+  width: 530px;
 
+  &__list {
+    @include row;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__sublist {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
 }
