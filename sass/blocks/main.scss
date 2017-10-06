@@ -4,7 +4,23 @@
     margin: 0 auto;
   }
 
+  &__row {
+    margin-bottom: 40px;
+  }
+
   &__slider {
     margin-bottom: 40px;
+  }
+
+  &__products {
+    margin-bottom: 40px;
+  }
+
+  &__advantages {
+    margin-bottom: 40px;
+  }
+
+  &__map {
+    position: relative;
   }
 }

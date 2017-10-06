@@ -1,0 +1,16 @@
+.products {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  border: 1px solid white;
+
+  &__product {
+    margin-right: 27/1150*100%;
+    margin: bottom 40px;
+
+    &:nth-child(4n) {
+      margin-right: 0px;
+    }
+  }
+
+}

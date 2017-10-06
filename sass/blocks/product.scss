@@ -1,0 +1,20 @@
+.product {
+  box-sizing: border-box;
+  width: 267/1150*100%;
+  border: 1px solid yellow;
+
+  &__img {
+    width: 100%;
+    height: auto;
+  }
+
+  &__price {
+    padding: 0;
+    margin: 0;
+  }
+
+  &__title {
+    padding: 0;
+    margin: 0;
+  }
+}

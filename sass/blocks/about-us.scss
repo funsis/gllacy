@@ -1,0 +1,9 @@
+.about-us {
+  @include row;
+  width: 325px;
+
+  &__item {
+    max-width: 160px;
+    border: 1px solid white;
+  }
+}
