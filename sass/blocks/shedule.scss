@@ -1,13 +1,19 @@
 .shedule{
   width: 165px;
+  text-align: right;
 
   &__time {
     padding: 0;
     margin: 0;
+    margin-bottom: 3px;
+    font-size: 14px;
+    font-weight: 700;
   }
 
   &__phone {
     padding: 0;
     margin: 0;
+    font-size: 22px;
+    font-weight: 700;
   }
 }
