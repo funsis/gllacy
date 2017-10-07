@@ -1,17 +1,101 @@
 .main-nav {
-  width: 530px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 580px;
+
+  &__logo {
+    width: 154px;
+    height: 64px;
+    margin-right: 10px;
+  }
 
   &__list {
-    @include row;
-    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
     padding: 0;
     margin: 0;
+    list-style: none;
+  }
+
+  &__item {
+    position: relative;
+    margin-right: 10px;
+    font-size: 16px;
+
+    &:hover {
+      color: black;
+      border-radius: 16px;
+      background-color: #f7f6f3;
+    }
+
+    &:hover .main-nav__sublist {
+      visibility: visible;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    display: block;
+    padding: 5px 15px;
+    font-size: 16px;
+    font-weight: 700;
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: rgba(255, 255, 255, 0.3);
+  }
+
+  &__sublist-wrap {
+    position: absolute;
+    top: 100%;
+    left: -6px;
+    padding-top: 5px;
   }
 
   &__sublist {
-    display: none;
-    list-style: none;
+    width: 145px;
     padding: 0;
-    margin: 0;
+    list-style: none;
+    background-color: #f7f6f3;
+    border-radius: 4px;
+    overflow: hidden;
+    visibility: hidden;
+  }
+
+  &__sublist-link {
+    display: block;
+    padding: 5px 23px;
+    font-size: 14px;
+    font-weight: 400;
+    color: black;
+    text-decoration: none;
+
+    &--title {
+      padding: 5px 13px;
+      margin: 0 10px;
+      font-weight: 700;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      cursor: default;
+    }
+
+    &--active {
+      color: #ffffff;
+      background-color: #d07058;
+      cursor: default;
+    }
+
+    &:not(&--title):not(&--active):hover {
+      background-color: #fbded8;
+      cursor: pointer;
+    }
+
+    &:not(&--title):not(&--active):active {
+      background-color: #f6b5a5;
+    }
   }
 }

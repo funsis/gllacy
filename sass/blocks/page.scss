@@ -1,4 +1,12 @@
 .page {
+  margin: 0px;
+  padding: 0px;
+  font-family: $font-family;
+  font-size: 18px;
+  line-height: 22px;
+  font-style: normal;
+  font-weight: $font-w-regular;
+  color: #ffffff;
   background: $bg-green;
 
   &__header {
