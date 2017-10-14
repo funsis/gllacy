@@ -67,16 +67,21 @@
     visibility: hidden;
   }
 
+  &__sublist-item:last-child {
+    padding-bottom: 7px;
+  }
+
   &__sublist-link {
     display: block;
-    padding: 5px 23px;
+    padding: 8px 20px;
     font-size: 14px;
+    line-height: 16px;
     font-weight: 400;
     color: black;
     text-decoration: none;
 
     &--title {
-      padding: 5px 13px;
+      padding: 13px 10px;
       margin: 0 10px;
       font-weight: 700;
       border-bottom: 1px solid rgba(0, 0, 0, 0.1);
