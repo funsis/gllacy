@@ -1,5 +1,5 @@
 .shedule{
-  width: 165px;
+  width: 170px;
   text-align: right;
 
   &__time {
@@ -7,6 +7,7 @@
     margin: 0;
     margin-bottom: 3px;
     font-size: 14px;
+    line-height: 18px;
     font-weight: 700;
   }
 
@@ -14,6 +15,7 @@
     padding: 0;
     margin: 0;
     font-size: 22px;
+    line-height: 24px;
     font-weight: 700;
   }
 }

@@ -2,7 +2,7 @@
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  width: 580px;
+  border: 1px solid white;
 
   &__logo {
     width: 154px;
@@ -22,7 +22,6 @@
 
   &__item {
     position: relative;
-    margin-right: 10px;
     font-size: 16px;
 
     &:hover {
@@ -42,8 +41,9 @@
 
   &__link {
     display: block;
-    padding: 5px 15px;
+    padding: 5px 13px;
     font-size: 16px;
+    line-height: 18px;
     font-weight: 700;
     color: inherit;
     text-decoration: underline;
@@ -62,7 +62,7 @@
     padding: 0;
     list-style: none;
     background-color: #f7f6f3;
-    border-radius: 4px;
+    border-radius: $border-r-small;
     overflow: hidden;
     visibility: hidden;
   }
