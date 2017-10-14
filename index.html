@@ -45,11 +45,14 @@
     </nav>
     <div class="user-block header__user-block">
       <div class="search user-block__search">
-        <div class="search__form-wrap">
           <form class="search__form" action="index.html" method="post">
-            <input class="search__input" type="text" name="search" placeholder="Что ищем?">
+            <div class="search__form-wrap">
+              <div class="field">
+                <input class="field__input" type="search" id="search" name="search" required>
+                <label class="field__label" for="search">Что ищем?</label>
+              </div>
+            </div>
           </form>
-        </div>
       </div>
       <div class="login user-block__login">
         <a class="login__link" href="#">Вход</a>
