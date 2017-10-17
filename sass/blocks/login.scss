@@ -9,11 +9,15 @@
   font-weight: 500;
   border-radius: 18px;
   background-color:  $light-wihite;
+  cursor: default;
 
   &__text {
     display: block;
     margin-top: 11px;
     margin-bottom: 9px;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
   }
 
   &::before {

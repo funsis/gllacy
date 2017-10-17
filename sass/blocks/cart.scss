@@ -1,0 +1,35 @@
+.cart {
+  position: relative;
+  box-sizing: border-box;
+  width: 120px;
+  height: 35px;
+  padding-left: 45px;
+  padding-right: 35px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  border-radius: 16px;
+  background-color: $light-wihite;
+  cursor: default;
+
+
+  &__text {
+    display: block;
+    margin-top: 11px;
+    margin-bottom: 9px;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 18px;
+    width: 21px;
+    height: 20px;
+    margin-top: -10px;
+    background: url('../img/sprite.png') -114px -148px;
+  }
+}
