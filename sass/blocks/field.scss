@@ -23,6 +23,7 @@
     color: black;
     border: 1px solid $light-gray;
     border-radius: $border-r-small;
+    background-color: white;
 
     &:hover {
       padding: 9px 14px;
@@ -41,6 +42,8 @@
     }
 
     &:invalid {
+      box-shadow: none;
+
       & + .field__label {
         bottom: 50%;
         left: 15px;

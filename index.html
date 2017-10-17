@@ -45,24 +45,32 @@
     </nav>
     <div class="user-block header__user-block">
       <div class="search user-block__search">
-          <form class="search__form" action="index.html" method="post">
-            <div class="search__form-wrap">
-              <div class="field">
-                <input class="field__input" type="search" id="search" name="search" required>
-                <label class="field__label" for="search">Что ищем?</label>
-              </div>
+        <form class="search__form" action="index.html" method="post">
+          <div class="search__form-wrap">
+            <div class="field">
+              <input class="field__input" type="search" id="search" name="search" required>
+              <label class="field__label" for="search">Что ищем?</label>
             </div>
-          </form>
+          </div>
+        </form>
       </div>
       <div class="login user-block__login">
-        <a class="login__link" href="#">Вход</a>
+        <span class="login__text">Вход</span>
         <form class="login__form" action="index.html" method="get">
-          <input class="login__input" type="email" name="login-email" placeholder="Электронная почта">
-          <input class="login__input" type="password" name="login-password" placeholder="Пароль">
-          <button class="button login__button" type="submit" name="login-button">Войти</button>
-          <div class="login__register">
-            <a class="login__link" href="#">Забыли пароль?</a>
-            <a class="login__link" href="#">Новая регистрация</a>
+          <div class="login__form-wrap">
+            <div class="field login__field">
+              <input class="field__input" type="email" id="login-email" name="login-email" required>
+              <label class="field__label" for="login-email">Электронная почта</label>
+            </div>
+            <div class="field login__field">
+              <input class="field__input" type="password" id="login-password" name="login-password" required>
+              <label  class="field__label" for="login-password">Пароль</label>
+            </div>
+            <button class="button login__button" type="submit" name="login-button">Войти</button>
+            <div class="login__register">
+              <a class="login__link" href="#">Забыли пароль?</a>
+              <a class="login__link" href="#">Новая регистрация</a>
+            </div>
           </div>
         </form>
       </div>
@@ -140,6 +148,7 @@
         <section class="subscribtion">
           <p class="subscribtion__text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
           <form class="subscribtion__form" action="index.html" method="post">
+            
             <input class="input subscribtion__input" type="email" name="email" value="" placeholder="Электронная почта">
             <button class="button subscribtion__button" type="submit" name="subscribtion-button">Отправить</button>
           </form>
