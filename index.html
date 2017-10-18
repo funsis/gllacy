@@ -59,12 +59,12 @@
         <form class="login__form" action="index.html" method="get">
           <div class="login__form-wrap">
             <div class="field login__field">
-              <input class="field__input" type="email" id="login-email" name="login-email" required>
+              <input class="field__input" type="text" id="login-email" name="login-email" required>
               <label class="field__label" for="login-email">Электронная почта</label>
             </div>
             <div class="field login__field">
               <input class="field__input" type="password" id="login-password" name="login-password" required>
-              <label  class="field__label" for="login-password">Пароль</label>
+              <label class="field__label" for="login-password">Пароль</label>
             </div>
             <button class="button login__button" type="submit" name="login-button">Войти</button>
             <div class="login__register">
@@ -119,28 +119,48 @@
           <a class="button banner__button" href="#">Хочу шоколадки!</a>
         </section>
       </div>
-      <div class="products  main__products">
-        <section class="product products__product">
-          <img class="product__img" src="img/index_ice1.png" width="267" height="267" alt="ice cream">
-          <p class="product__price"><span class="product__price-value">310р</span>/кг</p>
-          <p class="product__title">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-        </section>
-        <section class="product products__product">
-          <img class="product__img" src="img/index_ice2.png" width="267" height="267" alt="ice cream">
-          <p class="product__price"><span class="product__price-value">380р</span>/кг</p>
-          <p class="product__title">Сливочно-кофейное с кусочками шоколада</p>
-        </section>
-        <section class="product products__product">
-          <img class="product__img" src="img/index_ice3.png" width="267" height="267" alt="ice cream">
-          <p class="product__price"><span class="product__price-value">355р</span>/кг</p>
-          <p class="product__title">Сливочно-клубничное с присыпкой из белого шоколада</p>
-        </section>
-        <section class="product products__product">
-          <img class="product__img" src="img/index_ice4.png" width="267" height="267" alt="ice cream">
-          <p class="product__price"><span class="product__price-value">415р</span>/кг</p>
-          <p class="product__title">Сливочное крем-брюле с карамельной подливкой</p>
-        </section>
-      </div>
+      <section class="products  main__products">
+        <div class="product products__product">
+          <div class="product__img-wrap product__img-wrap--hit">
+            <img class="product__img" src="img/index_ice1.png" width="267" height="267" alt="ice cream">
+            <p class="product__price"><span class="product__price-value">310₽</span>/кг</p>
+          </div>
+          <a class="product__title" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+          <div class="product__button-wrap">
+            <a class="button product__button">Быстрый просмотр</a>
+          </div>
+        </div>
+        <div class="product products__product">
+          <div class="product__img-wrap product__img-wrap--hit">
+            <img class="product__img" src="img/index_ice2.png" width="267" height="267" alt="ice cream">
+            <p class="product__price"><span class="product__price-value">380₽</span>/кг</p>
+          </div>
+          <a class="product__title" href="#">Сливочно-кофейное с кусочками шоколада</a>
+          <div class="product__button-wrap">
+            <a class="button product__button">Быстрый просмотр</a>
+          </div>
+        </div>
+        <div class="product products__product">
+          <div class="product__img-wrap product__img-wrap--hit">
+            <img class="product__img" src="img/index_ice3.png" width="267" height="267" alt="ice cream">
+            <p class="product__price"><span class="product__price-value">355₽</span>/кг</p>
+          </div>
+          <a class="product__title" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+          <div class="product__button-wrap">
+            <a class="button product__button">Быстрый просмотр</a>
+          </div>
+        </div>
+        <div class="product products__product">
+          <div class="product__img-wrap product__img-wrap--hit">
+            <img class="product__img" src="img/index_ice4.png" width="267" height="267" alt="ice cream">
+            <p class="product__price"><span class="product__price-value">415₽</span>/кг</p>
+          </div>
+          <a class="product__title" href="#">Сливочное крем-брюле с карамельной подливкой</a>
+          <div class="product__button-wrap">
+            <a class="button product__button">Быстрый просмотр</a>
+          </div>
+        </div>
+      </section>
       <section class="advantages main__advantages">
         <h1 class="advantages__title">Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h1>
         <p class="advantages__item">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
