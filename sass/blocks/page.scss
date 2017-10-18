@@ -5,9 +5,26 @@
   font-size: 18px;
   line-height: 22px;
   font-style: normal;
-  font-weight: $font-w-regular;
+  font-weight: 400;
   color: #ffffff;
-  background: $bg-green;
+
+  &--ice1 {
+    background: url("../img/ice-bg1.png") no-repeat;
+    background-position: top;
+    background-color: #849d8f;
+  }
+
+  &--ice2 {
+    background: url("../img/ice-bg2.png") no-repeat;
+    background-position: top;
+    background-color: #8996a6;
+  }
+
+  &--ice3 {
+    background: url("../img/ice-bg3.png") no-repeat;
+    background-position: top;
+    background-color: #9d8b84;
+  }
 
   &__header {
     position: relative;
