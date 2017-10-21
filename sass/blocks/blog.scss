@@ -3,7 +3,8 @@
   width: 560/1150*100%;
   padding: 17px 20px;
   border-radius: 15px;
-  background: url("../img/blog_bg.jpg");
+  background: url("../img/blog_bg.jpg") no-repeat;
+  background-size: 100% 100%;
 
   &__text {
     padding: 0;

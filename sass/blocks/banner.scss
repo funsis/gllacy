@@ -1,9 +1,8 @@
 .banner {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
   box-sizing: border-box;
+  position: relative;
   width: 560/1150*100%;
+  min-height: 229px;
   padding-left: 20px;
   padding-right: 25px;
   border-radius: 15px;
@@ -22,21 +21,24 @@
     width: 100%;
     padding: 0;
     margin: 0;
-    margin-bottom: 45px;
     font-size: 18px;
     line-height: 22px;
     font-weight: 700;
   }
 
   &__button {
-    margin-bottom: 20px;
+    position: absolute;
+    right: 25px;
+    bottom: 20px;
   }
 
   &--raspberry {
-    background: url("../img/banner_raspberry.jpg");
+    background: url("../img/banner_raspberry.jpg") no-repeat;
+    background-size: cover;
   }
 
   &--choco {
-    background: url("../img/banner_choco.jpg") ;
+    background: url("../img/banner_choco.jpg") no-repeat;
+    background-size: cover;
   }
 }
