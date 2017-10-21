@@ -1,4 +1,27 @@
 .subscribtion {
+  box-sizing: border-box;
   width: 560/1150*100%;
-  border: 1px solid yellow;
+  padding: 0 30px;
+  padding-top: 37px;
+  padding-bottom: 40px;
+  border-radius: 15px;
+  background: url("../img/subscribe_bg.png");
+
+  &__text {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #5a5a5a;
+  }
+
+  &__form {
+    @include row;
+  }
+
+  &__field {
+    width: 66%;
+  }
 }
