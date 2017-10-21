@@ -171,13 +171,17 @@
       <div class="row main__row">
         <section class="blog">
           <p class="blog__text">Новое в нашем блоге</p>
-          <h2 class="blog__title">10  способов сервировки фруктовых щербетов к столу</h2>
+          <div class="blog__link-wrap">
+          <a class="blog__link" href="#">10  способов сервировки фруктовых щербетов к столу</a>
+        </div>
         </section>
         <section class="subscribtion">
           <p class="subscribtion__text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
           <form class="subscribtion__form" action="index.html" method="post">
-
-            <input class="input subscribtion__input" type="email" name="email" value="" placeholder="Электронная почта">
+            <div class="field subscribtion__field">
+              <input class="field__input" type="text" id="subscribtion_email" name="subscribtion_email" value="" required>
+              <label class="field__label" for="subscribtion_email">Электронная почта</label>
+            </div>
             <button class="button subscribtion__button" type="submit" name="subscribtion-button">Отправить</button>
           </form>
         </section>

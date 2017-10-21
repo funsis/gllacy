@@ -1,4 +1,41 @@
 .blog {
+  box-sizing: border-box;
   width: 560/1150*100%;
-  border: 1px solid yellow;
+  padding: 17px 20px;
+  border-radius: 15px;
+  background: url("../img/blog_bg.jpg");
+
+  &__text {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 7px;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+    color: #323232;
+  }
+
+  &__link-wrap {
+    width: 290px;
+  }
+
+  &__link {
+    width: 290px;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #323232;
+    text-decoration: none;
+    border-bottom: 2px solid #323232;
+
+    &:hover {
+      color: #e84d37;
+      border-bottom: 2px solid #f9cec5;
+    }
+
+    &:active {
+      color: #e84d37;
+      border-bottom: 2px solid #f9cec5;
+    }
+  }
 }
