@@ -1,18 +1,18 @@
 .map  {
+  z-index: 5;
   min-width: 100%;
   height: 430px;
   background: url("../img/map_bg.png") no-repeat center;
 
   &__centerize {
     position: relative;
-    bottom: 438px;
-    min-height: 430px;
     margin: 0 auto;
   }
 
   &__adress-feedback {
     position: absolute;
-    top: 63px;
+    z-index: 10;
+    bottom: 63px;
     right: 25px;
   }
 }
