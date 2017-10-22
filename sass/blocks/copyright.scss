@@ -4,5 +4,27 @@
   &__text  {
     padding: 0;
     margin: 0;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+  }
+
+  &__link {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: $light-wihite;
+
+    &:hover {
+      color: #ffbc9e;
+      text-decoration-color: #ffbc9e;
+    }
+
+    &:active {
+      color: #ffbc9e;
+      text-decoration-color: #ffbc9e;
+    }
   }
 }
