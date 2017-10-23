@@ -7,6 +7,7 @@
   font-style: normal;
   font-weight: 400;
   color: #ffffff;
+  background-color: #849d8f;
 
   &--ice1 {
     background: url("../img/ice-bg1.png") no-repeat;
@@ -30,7 +31,11 @@
     position: relative;
     margin: 0 auto;
     margin-top: 10px;
-    margin-bottom: 325px;
+    margin-bottom: 27px;
+
+    &--index {
+      margin-bottom: 325px;
+    }
   }
 
   &__footer {
