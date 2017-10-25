@@ -118,6 +118,51 @@
       <div class="iner-page-title main__iner-page-title">
         <h1 class="iner-page-title__text">Сливочное мороженное</h1>
       </div>
+      <form class="filters">
+        <fieldset class="filters__item filter-sort">
+          <legend class="filters__title">Сортировка:</legend>
+          <div class="filter-sort__field">
+            <select class="filter-sort__select" name="sort" id="sort">
+              <option value="pop">по популярности</option>
+              <option value="low-price">сначала недорогие</option>
+              <option value="high-price">сначала дорогие</option>
+              <option value="fatness">по жирности</option>
+            </select>
+          </div>
+        </fieldset>
+        <fieldset class="filters__item filter-price">
+          <legend class="filters__title">Цена: 100 руб. - 500руб.</legend>
+          <div class="filter-price__range">
+            <div class="filter-price__togle  filter-price__togle--min"></div>
+            <div class="filter-price__togle  filter-price__togle--max"></div>
+          </div>
+        </fieldset>
+        <fieldset class="filters__item filter-fatness">
+          <legend class="filters__title">Жирность:</legend>
+          <input class="filter-fatnes__radio" type="radio" id="0" name="fatness" value="0%">
+          <label class="filter-fatnes__label" for="0">0%</label>
+          <input class="filter-fatnes__radio" type="radio" id="below10" name="fatness" value="below 10%" checked>
+          <label class="filter-fatnes__radio" for="below10">Ниже 10%</label>
+          <input class="filter-fatnes__radio" type="radio" id="below30" name="fatness" value="below 30%">
+          <label class="filter-fatnes__label" for="below30">0%</label>
+          <input class="filter-fatnes__radio" type="radio" id="above30" name="fatness" value="above 30%">
+          <label class="filter-fatnes__label" for="above30">0%</label>
+        </fieldset>
+        <fieldset class="filters__item filter-topping">
+          <legend class="filters__title">Наполнители:</legend>
+          <input type="checkbox" id="choco" name="choco-topping" value="choco" checked>
+          <label for="choco">шоколадные</label>
+          <input type="checkbox" id="shugar" name="shugar-topping" value="shugar" checked>
+          <label for="shugar">сахарная присыпка</label>
+          <input type="checkbox" id="fruit" name="fruit-topping" value="fruit">
+          <label for="fruit">фрукты</label>
+          <input type="checkbox" id="syrop" name="syrop-topping" value="syrop">
+          <label for="syrop">сиропы</label>
+          <input type="checkbox" id="jam" name="jam-topping" value="jam">
+          <label for="jam">джемы</label>
+        </fieldset>
+        <input class="filters__submit-button" type="submit" name="filters__submit-button" value="Применить">
+      </form>
       <section class="products">
         <div class="product products__product">
           <div class="product__img-wrap">
