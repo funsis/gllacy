@@ -1,17 +1,22 @@
+/* Общие блоки */
 @import "variables.scss";
 @import "mixins.scss";
 @import "blocks/page.scss";
 @import "blocks/centerize.scss";
 @import "blocks/button.scss";
 @import "blocks/field.scss";
+@import "blocks/row.scss";
+
+/* Header */
 @import "blocks/header.scss";
 @import "blocks/main-nav.scss";
-@import "blocks/row.scss";
 @import "blocks/user-block.scss";
 @import "blocks/search.scss";
 @import "blocks/login.scss";
 @import "blocks/cart.scss";
 @import "blocks/shedule.scss";
+
+/* Main */
 @import "blocks/main.scss";
 @import "blocks/slider.scss";
 @import "blocks/banner.scss";
@@ -22,6 +27,10 @@
 @import "blocks/subscribtion.scss";
 @import "blocks/map.scss";
 @import "blocks/adress-feedback.scss";
+@import "blocks/bread-crumbs.scss";
+@import "blocks/iner-page-title.scss";
+
+/* Footer */
 @import "blocks/footer.scss";
 @import "blocks/social.scss";
 @import "blocks/about-us.scss";
