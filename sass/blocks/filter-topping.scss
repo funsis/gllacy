@@ -1,6 +1,7 @@
-.filter-fatness {
-  width: 415px;
-  padding: 5px 0 0;
+.filter-topping {
+  width: 705px;
+  padding: 0;
+  padding-top: 5px;
 
   &__field {
     box-sizing: border-box;
@@ -14,20 +15,19 @@
     background-color: $light-wihite;
   }
 
-  &__radio {
+  &__checkbox {
     display: none;
 
-    &:checked + .filter-fatness__label::before {
+    &:checked + .filter-topping__label::before {
       content: "";
-      box-sizing: border-box;
       display: block;
       position: absolute;
-      left: 5px;
-      top: 3px;
-      width: 11px;
-      height: 11px;
-      border-radius: 100%;
-      background-color: white;
+      left: 0;
+      top: 0;
+      width: 20px;
+      height: 20px;
+      border-radius: $border-r-small;
+      background-image: url("../img/checkbox-check.png");
     }
   }
 
@@ -41,15 +41,15 @@
     color: white;
   }
 
-  &__radio-button {
+  &__checkbox-button {
     box-sizing: border-box;
     display: block;
     position: absolute;
     left: 0;
-    top: -2px;
-    width: 21px;
-    height: 21px;
-    border-radius: 100%;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: $border-r-small;
     border: 1px solid white;
 
     &:hover {

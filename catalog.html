@@ -156,16 +156,18 @@
         </fieldset>
         <fieldset class="filters__item filter-topping">
           <legend class="filters__title">Наполнители:</legend>
-          <input type="checkbox" id="choco" name="choco-topping" value="choco" checked>
-          <label for="choco">шоколадные</label>
-          <input type="checkbox" id="shugar" name="shugar-topping" value="shugar" checked>
-          <label for="shugar">сахарная присыпка</label>
-          <input type="checkbox" id="fruit" name="fruit-topping" value="fruit">
-          <label for="fruit">фрукты</label>
-          <input type="checkbox" id="syrop" name="syrop-topping" value="syrop">
-          <label for="syrop">сиропы</label>
-          <input type="checkbox" id="jam" name="jam-topping" value="jam">
-          <label for="jam">джемы</label>
+          <div class="filter-topping__field">
+            <input class="filter-topping__checkbox" type="checkbox" id="choco" name="choco-topping" value="choco" checked>
+            <label class="filter-topping__label" for="choco"><span class="filter-topping__checkbox-button"></span>шоколадные</label>
+            <input class="filter-topping__checkbox" type="checkbox" id="shugar" name="shugar-topping" value="shugar" checked>
+            <label class="filter-topping__label" for="shugar"><span class="filter-topping__checkbox-button"></span>сахарная присыпка</label>
+            <input class="filter-topping__checkbox" type="checkbox" id="fruit" name="fruit-topping" value="fruit">
+            <label class="filter-topping__label" for="fruit"><span class="filter-topping__checkbox-button"></span>фрукты</label>
+            <input class="filter-topping__checkbox" type="checkbox" id="syrop" name="syrop-topping" value="syrop">
+            <label class="filter-topping__label" for="syrop"><span class="filter-topping__checkbox-button"></span>сиропы</label>
+            <input class="filter-topping__checkbox" type="checkbox" id="jam" name="jam-topping" value="jam">
+            <label class="filter-topping__label" for="jam"><span class="filter-topping__checkbox-button"></span>джемы</label>
+          </div>
         </fieldset>
         <input class="filters__submit-button" type="submit" name="filters__submit-button" value="Применить">
       </form>
