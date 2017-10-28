@@ -1,11 +1,10 @@
 .filters {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: space-between;
   width: 860px;
 
   &__item {
-    margin-right: 12px;
     margin-bottom: 17px;
     border: 0;
   }

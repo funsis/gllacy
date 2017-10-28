@@ -143,14 +143,16 @@
         </fieldset>
         <fieldset class="filters__item filter-fatness">
           <legend class="filters__title">Жирность:</legend>
-          <input class="filter-fatnes__radio" type="radio" id="0" name="fatness" value="0%">
-          <label class="filter-fatnes__label" for="0">0%</label>
-          <input class="filter-fatnes__radio" type="radio" id="below10" name="fatness" value="below 10%" checked>
-          <label class="filter-fatnes__radio" for="below10">Ниже 10%</label>
-          <input class="filter-fatnes__radio" type="radio" id="below30" name="fatness" value="below 30%">
-          <label class="filter-fatnes__label" for="below30">0%</label>
-          <input class="filter-fatnes__radio" type="radio" id="above30" name="fatness" value="above 30%">
-          <label class="filter-fatnes__label" for="above30">0%</label>
+          <div class="filter-fatness__field">
+            <input class="filter-fatness__radio" type="radio" id="0" name="fatness" value="0%">
+            <label class="filter-fatness__label" for="0"><span class="filter-fatness__radio-button"></span>0%</label>
+            <input class="filter-fatness__radio" type="radio" id="below10" name="fatness" value="below 10%" checked>
+            <label class="filter-fatness__label" for="below10"><span class="filter-fatness__radio-button"></span>до 10%</label>
+            <input class="filter-fatness__radio" type="radio" id="below30" name="fatness" value="below 30%">
+            <label class="filter-fatness__label" for="below30"><span class="filter-fatness__radio-button"></span>до 30%</label>
+            <input class="filter-fatness__radio" type="radio" id="above30" name="fatness" value="above 30%">
+            <label class="filter-fatness__label" for="above30"><span class="filter-fatness__radio-button"></span>выше 30%</label>
+          </div>
         </fieldset>
         <fieldset class="filters__item filter-topping">
           <legend class="filters__title">Наполнители:</legend>
