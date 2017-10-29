@@ -54,4 +54,11 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
+
+  &__overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 24;
+  }
 }
