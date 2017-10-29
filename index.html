@@ -86,25 +86,25 @@
   <main class="main page__main">
     <div class="centerize main__centerize">
       <div class="slider main__slider">
-        <div class="slider__slide">
+        <div class="slider__slide slider__slide--1">
           <b class="slider__title">Крем-брюле и пломбир с малиновым джемом</b>
           <a class="button button--big" href="#">Дайте оба!</a>
         </div>
-        <div class="slider__slide slider__slide--hiden">
-          <b class="slider__title">Крем-брюле и пломбири с малиновым джемом</b>
+        <div class="slider__slide slider__slide--2 slider__slide--hiden">
+          <b class="slider__title">Шоколадный пломбир и лимонный сорбет</b>
           <a class="button button--big" href="#">Дайте оба!</a>
         </div>
-        <div class="slider__slide slider__slide--hiden">
-          <b class="slider__title">Крем-брюле и пломбири с малиновым джемом</b>
+        <div class="slider__slide slider__slide--3 slider__slide--hiden">
+          <b class="slider__title">Пломбир с помадкой и клубничный щербет</b>
           <a class="button button--big" href="#">Дайте оба!</a>
         </div>
         <div class="slider__toogle">
           <input type="radio" id="slide_1" name="slide" value="1" checked>
-          <label class="slider__radio" for="slide_1"></label>
+          <label class="slider__radio slider__radio--1" for="slide_1"></label>
           <input type="radio" id="slide_2" name="slide" value="1">
-          <label class="slider__radio" for="slide_2"></label>
+          <label class="slider__radio slider__radio--2" for="slide_2"></label>
           <input type="radio" id="slide_3" name="slide" value="1">
-          <label class="slider__radio" for="slide_3"></label>
+          <label class="slider__radio slider__radio--3" for="slide_3"></label>
         </div>
       </div>
       <div class="row main__row">
@@ -229,6 +229,7 @@
   </footer>
   <div class="modal-feedback page__modal-feedback">
     <h3 class="modal-feedback__title">Мы обязательно вам ответим!</h3>
+    <div class="modal-feedback__close"></div>
     <form class="modal-feedback__form" action="index.html" method="post">
       <div class="field modal-feedback__field">
         <input class="field__input field modal-feedback__item" type="text" id="feedback-name" name="feedback-name" required>
@@ -246,6 +247,7 @@
     </form>
   </div>
   <div class="overlay page__overlay"></div>
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>
