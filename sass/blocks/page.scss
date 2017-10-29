@@ -27,6 +27,10 @@
     background-color: #9d8b84;
   }
 
+  &--catalog {
+    background: linear-gradient(to top, #849d8f, #9db1a5 ) ;
+  }
+
   &__header {
     position: relative;
     margin: 0 auto;
