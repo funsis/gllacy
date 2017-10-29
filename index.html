@@ -227,6 +227,25 @@
       <p class="copyright__text">Сделал <a class="copyright__link" href="https://github.com/funsis">FUNSIS</a> в 2017.</p>
     </section>
   </footer>
+  <div class="modal-feedback page__modal-feedback">
+    <h3 class="modal-feedback__title">Мы обязательно вам ответим!</h3>
+    <form class="modal-feedback__form" action="index.html" method="post">
+      <div class="field modal-feedback__field">
+        <input class="field__input field modal-feedback__item" type="text" id="feedback-name" name="feedback-name" required>
+        <label class="field__label" for="feedback-name">Как вас зовут?</label>
+      </div>
+      <div class="field modal-feedback__field">
+        <input class="field__input field modal-feedback__item" type="text" id="feedback-email" name="feedback-email" required>
+        <label class="field__label" for="feedback-email">Ваша почта для ответа?</label>
+      </div>
+      <div class="field modal-feedback__field modal-feedback__field--feedback-text">
+        <textarea class="field__input field modal-feedback__item" type="text" id="feedback-text" name="feedback-text" required></textarea>
+        <label class="field__label" for="feedback-text">Напишите что-нибудь...</label>
+      </div>
+      <input class="button" type="submit" name="modal-feedback__submit" value="Отправить">
+    </form>
+  </div>
+  <div class="overlay"></div>
 </body>
 
 </html>
