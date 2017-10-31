@@ -24,7 +24,7 @@ modal_close.addEventListener("click", function(event) {
 });
 
 //Слайдер
-slider_radio1.addEventListener("click", function(event){
+slider_radio1.addEventListener("click", function(event) {
   bg.classList.add("page--ice1");
   bg.classList.remove("page--ice2");
   bg.classList.remove("page--ice3");
@@ -33,7 +33,7 @@ slider_radio1.addEventListener("click", function(event){
   slide3.classList.add("slider__slide--hiden");
 });
 
-slider_radio2.addEventListener("click", function(event){
+slider_radio2.addEventListener("click", function(event) {
   bg.classList.add("page--ice2");
   bg.classList.remove("page--ice1");
   bg.classList.remove("page--ice3");
@@ -42,7 +42,7 @@ slider_radio2.addEventListener("click", function(event){
   slide3.classList.add("slider__slide--hiden");
 });
 
-slider_radio3.addEventListener("click", function(event){
+slider_radio3.addEventListener("click", function(event) {
   bg.classList.add("page--ice3");
   bg.classList.remove("page--ice1");
   bg.classList.remove("page--ice2");
@@ -50,3 +50,27 @@ slider_radio3.addEventListener("click", function(event){
   slide2.classList.add("slider__slide--hiden");
   slide1.classList.add("slider__slide--hiden");
 });
+
+//Yandex map API
+ymaps.ready(init);
+var GllacyMap,
+  IceMark;
+
+function init() {
+
+  GllacyMap = new ymaps.Map("map", {
+    center: [59.938880, 30.325865],
+    zoom: 17
+  });
+
+  IceMark = new ymaps.Placemark([59.938631, 30.323055], {
+    hintContent: 'Gllacy',
+  }, {
+    iconLayout: "default#image",
+    iconImageHref: "../img/map_placemark.png",
+    iconImageSize: [80, 140],
+    iconImageOffset: [-40, -140]
+  });
+
+  GllacyMap.geoObjects.add(IceMark);
+}

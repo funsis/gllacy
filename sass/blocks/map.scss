@@ -1,8 +1,13 @@
 .map  {
   z-index: 5;
-  min-width: 100%;
+  width: 100%;
   height: 430px;
   background: url("../img/map_bg.png") no-repeat center;
+
+  &__container {
+    width: 100%;
+    height: 430px;
+  }
 
   &__centerize {
     position: relative;
