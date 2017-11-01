@@ -78,6 +78,11 @@
     text-align: center;
   }
 
+  &__button {
+    width: 200px;
+    padding: 10.5px 17px;
+  }
+
   &:hover {
     z-index: 2;
     cursor: pointer;

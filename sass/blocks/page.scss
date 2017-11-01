@@ -7,7 +7,7 @@
   font-style: normal;
   font-weight: 400;
   color: #ffffff;
-  background-color: #849d8f;
+  background: #849d8f;
 
   &--ice1 {
     background: url("../img/ice-bg1.png") no-repeat;
@@ -28,7 +28,7 @@
   }
 
   &--catalog {
-    background: linear-gradient(to top, #849d8f, #9db1a5 ) ;
+    background: linear-gradient(to top, #849d8f, #9db1a5);
   }
 
   &__header {

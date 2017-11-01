@@ -1,5 +1,5 @@
 var modal_button = document.querySelector(".adress-feedback__button");
-var modal_window = document.querySelector(".modal-feedback")
+var modal_window = document.querySelector(".modal-feedback");
 var modal_close = document.querySelector(".modal-feedback__close");
 var overlay = document.querySelector(".overlay");
 var slider_radio1 = document.querySelector(".slider__radio--1");
