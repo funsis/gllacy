@@ -1,0 +1,64 @@
+.page {
+  margin: 0px;
+  padding: 0px;
+  font-family: $font-family;
+  font-size: 18px;
+  line-height: 22px;
+  font-style: normal;
+  font-weight: 400;
+  color: #ffffff;
+  background: #849d8f;
+
+  &--ice1 {
+    background: url("../img/ice-bg1.png") no-repeat;
+    background-position: top;
+    background-color: #849d8f;
+  }
+
+  &--ice2 {
+    background: url("../img/bg-ice2.png") no-repeat;
+    background-position: top;
+    background-color: #8996a6;
+  }
+
+  &--ice3 {
+    background: url("../img/bg-ice3.png") no-repeat;
+    background-position: top;
+    background-color: #9d8b84;
+  }
+
+  &--catalog {
+    background: linear-gradient(to top, #849d8f, #9db1a5);
+  }
+
+  &__header {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 27px;
+
+    &--index {
+      margin-bottom: 325px;
+    }
+  }
+
+  &__footer {
+    margin: 0 auto;
+    margin-top: 35px;
+  }
+
+  &__modal-feedback {
+    position: fixed;
+    z-index: 25;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 24;
+  }
+}

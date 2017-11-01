@@ -1,0 +1,60 @@
+.filter-topping {
+  width: 700px;
+  padding: 0;
+  padding-top: 5px;
+
+  &__field {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 36px;
+    padding: 0 15px;
+    border-radius: 17px;
+    background-color: $light-wihite;
+  }
+
+  &__checkbox {
+    display: none;
+
+    &:checked + .filter-topping__label::before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 20px;
+      height: 20px;
+      border-radius: $border-r-small;
+      background-image: url("../img/checkbox-check.png");
+    }
+  }
+
+  &__label {
+    display: inline-block;
+    position: relative;
+    padding-left: 30px;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+  }
+
+  &__checkbox-button {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: $border-r-small;
+    border: 1px solid white;
+
+    &:hover {
+      border: 2px solid white;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+.header {
+  @include row;
+
+  &__shedule {
+    position: absolute;
+    right: 25px;
+    top: 100%;
+  }
+}

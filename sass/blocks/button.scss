@@ -1,0 +1,37 @@
+.button {
+  display: inline-block;
+  box-sizing: border-box;
+  width: auto;
+  height: 45px;
+  padding: 10.5px 25px;
+  font-family: $font-family;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: white;
+  border-radius: 20px;
+  border: none;
+  background-color: #e84d37;
+  background: linear-gradient(to top, #e74a35 0%, #f26843 100%);
+  box-shadow: 0 1px 2px #ac1000;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #ed725f;
+    background: linear-gradient(to top, #ed6f5e 0%, #f48568 100%);
+  }
+
+  &:active {
+    background: linear-gradient(to top, #f26843 0%, #e74a35 100%);
+    box-shadow: inset 0 2px 2px #942718;
+  }
+
+  &--big {
+    height: 65px;
+    padding: 10.5px 42px;
+    font-size: 32px;
+    line-height: 44px;
+    border-radius: 30px;
+  }
+}

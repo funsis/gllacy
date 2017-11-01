@@ -1,0 +1,15 @@
+.products {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  &__product {
+    margin: bottom 40px;
+    margin-right: 27/1150*100%;
+
+    &:nth-child(4n) {
+      margin-right: 0px;
+    }
+  }
+
+}

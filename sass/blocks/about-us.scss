@@ -1,0 +1,54 @@
+.about-us {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 305px;
+  padding-left: 20px;
+
+  &__item {
+    flex-basis: auto;
+
+    &:last-child {
+      flex-grow: 2;
+    }
+  }
+
+  &__link {
+    position: relative;
+    display: inline-block;
+    min-width: 111px;
+    max-width: 165px;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: $light-wihite;
+
+    &:hover {
+      color: #ffbc9e;
+      text-decoration-color: #ffbc9e;
+    }
+
+    &:active {
+      color: #ffbc9e;
+      text-decoration-color: #ffbc9e;
+    }
+
+    &--for-providers {
+      font-weight: 700;
+
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        right: 100%;
+        top: 3px;
+        width: 15px;
+        height: 13px;
+        margin-right: 6px;
+        background: url("../img/heart.png")
+      }
+    }
+  }
+}

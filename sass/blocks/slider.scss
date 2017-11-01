@@ -1,0 +1,53 @@
+.slider {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+
+  &__slide {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 700px;
+    text-align: center;
+
+    &--hiden {
+      display: none;
+    }
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    font-size: 60px;
+    line-height: 60.35px;
+    font-weight: 700;
+  }
+
+  &__toogle {
+    position: absolute;
+    left: 0;
+    bottom: 22px;
+    min-width: 80px;
+
+    & input {
+      display: none;
+
+      &:checked + .slider__radio {
+        background-color: white;
+      }
+    }
+  }
+
+  &__radio {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+    border-radius: 100%;
+    border: 2px solid white;
+
+    &:hover {
+      background-color: $light-wihite;
+    }
+  }
+}

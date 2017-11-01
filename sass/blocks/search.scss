@@ -1,0 +1,60 @@
+.search {
+  display: block;
+  position: relative;
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  background-color: $light-wihite;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 17px;
+    height: 17px;
+    margin-left: -8.5px;
+    margin-top: -8.5px;
+    background: url('../img/sprite.png') -200px -88px;
+  }
+
+  &:hover {
+    background-color: white;
+  }
+
+  &:hover .search__form {
+    visibility: visible;
+  }
+
+  &:hover::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 17px;
+    height: 17px;
+    margin-left: -8.5px;
+    margin-top: -8.5px;
+    background: url('../img/sprite.png') -200px -125px;
+  }
+
+  &__form {
+    position: absolute;
+    z-index: 5;
+    top: 100%;
+    right: 0;
+    padding-top: 5px;
+    visibility: hidden;
+  }
+
+  &__form-wrap {
+    width: 345px;
+    height: 45px;
+    padding: 20px;
+    border-radius: $border-r-small;
+    background-color: #f8f7f4;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+  }
+}

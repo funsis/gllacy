@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" type="text/css">
+  <link rel="stylesheet" href="css/normilize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>GLLACY</title>
+</head>
+
+<body class="page page--catalog">
+  <header class="header page__header centerize">
+    <nav class="main-nav header__main-nav">
+      <a href="index.html"><img class="main-nav__logo" src="img/logo.png" width="154" height="64" alt="gllacy"></a>
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__link main-nav__link--active" href="#">Каталог</a>
+          <div class="main-nav__sublist-wrap">
+            <ul class="main-nav__sublist">
+              <li class="main-nav__sublist-item">
+                <span class="main-nav__sublist-link main-nav__sublist-link--title">Новинки</span>
+              </li>
+              <li class="main-nav__sublist-item">
+                <a class="main-nav__sublist-link main-nav__sublist-link--active" href="#">Сливочное</a>
+              </li>
+              <li class="main-nav__sublist-item">
+                <a class="main-nav__sublist-link" href="#">Щербеты</a>
+              </li>
+              <li class="main-nav__sublist-item">
+                <a class="main-nav__sublist-link" href="#">Фруктовый лед</a>
+              </li>
+              <li class="main-nav__sublist-item">
+                <a class="main-nav__sublist-link" href="#">Мелорин</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Доставка и оплата</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">О компании</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="user-block header__user-block">
+      <div class="search user-block__search">
+        <form class="search__form" action="index.html" method="post">
+          <div class="search__form-wrap">
+            <div class="field">
+              <input class="field__input" type="search" id="search" name="search" required>
+              <label class="field__label" for="search">Что ищем?</label>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="login user-block__login">
+        <span class="login__text">Вход</span>
+        <form class="login__form" action="index.html" method="get">
+          <div class="login__form-wrap">
+            <div class="field login__field">
+              <input class="field__input" type="text" id="login-email" name="login-email" required>
+              <label class="field__label" for="login-email">Электронная почта</label>
+            </div>
+            <div class="field login__field">
+              <input class="field__input" type="password" id="login-password" name="login-password" required>
+              <label class="field__label" for="login-password">Пароль</label>
+            </div>
+            <button class="button login__button" type="submit" name="login-button">Войти</button>
+            <div class="login__register">
+              <a class="login__link" href="#">Забыли пароль?</a>
+              <a class="login__link" href="#">Новая регистрация</a>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="cart user-block__cart cart--full">
+        <span class="cart__text">2 товара</span>
+        <div class="cart__order-wrap">
+          <div class="cart__order">
+            <table class="cart__table">
+              <tr class="cart__table-row">
+                <td class="cart__table-close"></td>
+                <td class="cart__table-img"><img src="../img/cart_ice1.png" alt="ice cream" width="33" height="33"></td>
+                <td class="cart__table-text">Пломбир с апельсиновым джемом</td>
+                <td class="cart__table-price">1,5 кг х <span class="cart__table-price cart__table-price--gray">200 руб.</span></td>
+                <td class="cart__table-price cart__table-price--total">300 руб.</td>
+              </tr>
+              <tr class="cart__table-row">
+                <td class="cart__table-close"></td>
+                <td class="cart__table-img"><img src="../img/cart_ice2.png" alt="ice cream" width="33" height="33"></td>
+                <td class="cart__table-text">Клубничный пломбир с присыпкой из белого шоколада</td>
+                <td class="cart__table-price">1,5 кг х <span class="cart__table-price cart__table-price--gray">300 руб.</span></td>
+                <td class="cart__table-price cart__table-price--total">450 руб.</td>
+              </tr>
+            </table>
+            <div class="cart__total-price-wrap">
+              <p class="cart__total-price">Итого: 750 руб.</p>
+            </div>
+            <div class="cart__button-wrap">
+              <a class="button" href="#">Оформить заказ</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="shedule header__shedule">
+        <p class="shedule__time">С 10 до 20, ежедневно</p>
+        <p class="shedule__phone">8 812 450-25-25</p>
+      </div>
+    </div>
+  </header>
+  <main class="main page__main">
+    <div class="centerize main__centerize">
+      <div class="bread-crumbs main__bread-crumbs">
+        <a class="bread-crumbs__link" href="index.html">Главная</a>
+        <a class="bread-crumbs__link" href="#">Каталог</a>
+        <span class="bread-crumbs__current">Сливочное</span>
+      </div>
+      <div class="iner-page-title main__iner-page-title">
+        <h1 class="iner-page-title__text">Сливочное мороженное</h1>
+      </div>
+      <form class="filters main__filters">
+        <fieldset class="filters__item filter-sort">
+          <legend class="filters__title">Сортировка:</legend>
+          <div class="filter-sort__field">
+            <select class="filter-sort__select" name="sort" id="sort">
+              <option value="pop">по популярности</option>
+              <option value="low-price">сначала недорогие</option>
+              <option value="high-price">сначала дорогие</option>
+              <option value="fatness">по жирности</option>
+            </select>
+          </div>
+        </fieldset>
+        <fieldset class="filters__item filter-price">
+          <legend class="filters__title">Цена: 100 руб. - 500руб.</legend>
+          <div class="filter-price__field">
+            <div class="filter-price__scale">
+              <div class="filter-price__range">
+                <div class="filter-price__togle  filter-price__togle--min"></div>
+                <div class="filter-price__togle  filter-price__togle--max"></div>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="filters__item filter-fatness">
+          <legend class="filters__title">Жирность:</legend>
+          <div class="filter-fatness__field">
+            <input class="filter-fatness__radio" type="radio" id="0" name="fatness" value="0%">
+            <label class="filter-fatness__label" for="0"><span class="filter-fatness__radio-button"></span>0%</label>
+            <input class="filter-fatness__radio" type="radio" id="below10" name="fatness" value="below 10%" checked>
+            <label class="filter-fatness__label" for="below10"><span class="filter-fatness__radio-button"></span>до 10%</label>
+            <input class="filter-fatness__radio" type="radio" id="below30" name="fatness" value="below 30%">
+            <label class="filter-fatness__label" for="below30"><span class="filter-fatness__radio-button"></span>до 30%</label>
+            <input class="filter-fatness__radio" type="radio" id="above30" name="fatness" value="above 30%">
+            <label class="filter-fatness__label" for="above30"><span class="filter-fatness__radio-button"></span>выше 30%</label>
+          </div>
+        </fieldset>
+        <fieldset class="filters__item filter-topping">
+          <legend class="filters__title">Наполнители:</legend>
+          <div class="filter-topping__field">
+            <input class="filter-topping__checkbox" type="checkbox" id="choco" name="choco-topping" value="choco" checked>
+            <label class="filter-topping__label" for="choco"><span class="filter-topping__checkbox-button"></span>шоколадные</label>
+            <input class="filter-topping__checkbox" type="checkbox" id="shugar" name="shugar-topping" value="shugar" checked>
+            <label class="filter-topping__label" for="shugar"><span class="filter-topping__checkbox-button"></span>сахарная присыпка</label>
+            <input class="filter-topping__checkbox" type="checkbox" id="fruit" name="fruit-topping" value="fruit">
+            <label class="filter-topping__label" for="fruit"><span class="filter-topping__checkbox-button"></span>фрукты</label>
+            <input class="filter-topping__checkbox" type="checkbox" id="syrop" name="syrop-topping" value="syrop">
+            <label class="filter-topping__label" for="syrop"><span class="filter-topping__checkbox-button"></span>сиропы</label>
+            <input class="filter-topping__checkbox" type="checkbox" id="jam" name="jam-topping" value="jam">
+            <label class="filter-topping__label" for="jam"><span class="filter-topping__checkbox-button"></span>джемы</label>
+          </div>
+        </fieldset>
+        <input class="filters__submit-button" type="submit" name="filters__submit-button" value="Применить">
+      </form>
+      <section class="products">
+        <div class="product products__product">
+          <div class="product__img-wrap">
+            <img class="product__img" src="img/catalog_ice1.png" width="267" height="267" alt="ice cream">
+            <p class="product__price"><span class="product__price-value">310₽</span>/кг</p>
+          </div>
+          <a class="product__title" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+          <div class="product__button-wrap">
+            <a class="button product__button">Быстрый просмотр</a>
+          </div>
+        </div>
+        <div class="product products__product">
+          <div class="product__img-wrap">
+            <img class="product__img" src="img/catalog_ice2.png" width="267" height="267" alt="ice cream">
+            <p class="product__price"><span class="product__price-value">310₽</span>/кг</p>
+          </div>
+          <a class="product__title" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+          <div class="product__button-wrap">
+            <a class="button product__button">Быстрый просмотр</a>
+          </div>
+        </div>
+        <div class="product products__product">
+          <div class="product__img-wrap">
+            <img class="product__img" src="img/catalog_ice3.png" width="267" height="267" alt="ice cream">
+            <p class="product__price"><span class="product__price-value">310₽</span>/кг</p>
+          </div>
+          <a class="product__title" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+          <div class="product__button-wrap">
+            <a class="button product__button">Быстрый просмотр</a>
+          </div>
+        </div>
+        <div class="product products__product">
+          <div class="product__img-wrap">
+            <img class="product__img" src="img/catalog_ice4.png" width="267" height="267" alt="ice cream">
+            <p class="product__price"><span class="product__price-value">310₽</span>/кг</p>
+          </div>
+          <a class="product__title" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+          <div class="product__button-wrap">
+            <a class="button product__button">Быстрый просмотр</a>
+          </div>
+        </div>
+        <div class="product products__product">
+          <div class="product__img-wrap">
+            <img class="product__img" src="img/catalog_ice5.png" width="267" height="267" alt="ice cream">
+            <p class="product__price"><span class="product__price-value">310₽</span>/кг</p>
+          </div>
+          <a class="product__title" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+          <div class="product__button-wrap">
+            <a class="button product__button">Быстрый просмотр</a>
+          </div>
+        </div>
+        <div class="product products__product">
+          <div class="product__img-wrap">
+            <img class="product__img" src="img/catalog_ice6.png" width="267" height="267" alt="ice cream">
+            <p class="product__price"><span class="product__price-value">310₽</span>/кг</p>
+          </div>
+          <a class="product__title" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+          <div class="product__button-wrap">
+            <a class="button product__button">Быстрый просмотр</a>
+          </div>
+        </div>
+        <div class="product products__product">
+          <div class="product__img-wrap">
+            <img class="product__img" src="img/catalog_ice7.png" width="267" height="267" alt="ice cream">
+            <p class="product__price"><span class="product__price-value">310₽</span>/кг</p>
+          </div>
+          <a class="product__title" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+          <div class="product__button-wrap">
+            <a class="button product__button">Быстрый просмотр</a>
+          </div>
+        </div>
+        <div class="product products__product">
+          <div class="product__img-wrap">
+            <img class="product__img" src="img/catalog_ice8.png" width="267" height="267" alt="ice cream">
+            <p class="product__price"><span class="product__price-value">310₽</span>/кг</p>
+          </div>
+          <a class="product__title" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+          <div class="product__button-wrap">
+            <a class="button product__button">Быстрый просмотр</a>
+          </div>
+        </div>
+        <div class="product products__product">
+          <div class="product__img-wrap">
+            <img class="product__img" src="img/catalog_ice9.png" width="267" height="267" alt="ice cream">
+            <p class="product__price"><span class="product__price-value">310₽</span>/кг</p>
+          </div>
+          <a class="product__title" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+          <div class="product__button-wrap">
+            <a class="button product__button">Быстрый просмотр</a>
+          </div>
+        </div>
+        <div class="product products__product">
+          <div class="product__img-wrap">
+            <img class="product__img" src="img/catalog_ice10.png" width="267" height="267" alt="ice cream">
+            <p class="product__price"><span class="product__price-value">310₽</span>/кг</p>
+          </div>
+          <a class="product__title" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+          <div class="product__button-wrap">
+            <a class="button product__button">Быстрый просмотр</a>
+          </div>
+        </div>
+        <div class="product products__product">
+          <div class="product__img-wrap">
+            <img class="product__img" src="img/catalog_ice11.png" width="267" height="267" alt="ice cream">
+            <p class="product__price"><span class="product__price-value">310₽</span>/кг</p>
+          </div>
+          <a class="product__title" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+          <div class="product__button-wrap">
+            <a class="button product__button">Быстрый просмотр</a>
+          </div>
+        </div>
+        <div class="product products__product">
+          <div class="product__img-wrap">
+            <img class="product__img" src="img/catalog_ice12.png" width="267" height="267" alt="ice cream">
+            <p class="product__price"><span class="product__price-value">310₽</span>/кг</p>
+          </div>
+          <a class="product__title" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+          <div class="product__button-wrap">
+            <a class="button product__button">Быстрый просмотр</a>
+          </div>
+        </div>
+      </section>
+      <div class="paginator main__paginator">
+        <ul class="paginator__navigation  paginator__navigation--first-page">
+          <li class="paginator__item"><span class="paginator__link paginator__link paginator__link paginator__link--active">1</span></li>
+          <li class="paginator__item"><a class="paginator__link" href="#">2</a></li>
+          <li class="paginator__item"><a class="paginator__link" href="#">3</a></li>
+          <li class="paginator__item"><a class="paginator__link" href="#">4</a></li>
+          <li class="paginator__item"><a class="paginator__link" href="#">5</a></li>
+        </ul>
+      </div>
+    </div>
+  </main>
+  <footer class="footer page__footer centerize">
+    <section class="social">
+      <a class="social__link social__link--tw" href="#"></a>
+      <a class="social__link social__link--ig" href="#"></a>
+      <a class="social__link social__link--fb" href="#"></a>
+      <a class="social__link social__link--vk" href="#"></a>
+    </section>
+    <section class="about-us">
+      <div class="about-us__item">
+        <a class="about-us__link about-us__link--for-providers" href="#">Для поставщиков</a>
+        <a class="about-us__link" href="#">О производстве</a>
+      </div>
+      <div class="about-us__item">
+        <a class="about-us__link" href="#">Наши документы</a>
+        <a class="about-us__link" href="#">Экологические стандарты</a>
+      </div>
+    </section>
+    <section class="copyright">
+      <p class="copyright__text">Сделал <a class="copyright__link" href="https://github.com/funsis">FUNSIS</a> в 2017.</p>
+    </section>
+  </footer>
+</body>
+
+</html>

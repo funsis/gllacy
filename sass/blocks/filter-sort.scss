@@ -1,0 +1,83 @@
+.filter-sort {
+  width: 196px;
+  padding: 5px 0 0;
+
+  &__field {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    height: 36px;
+    border-radius: 17px;
+    background-color: $light-wihite;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      right: 12px;
+      width: 11px;
+      height: 9px;
+      margin-top: -2px;
+      background: url("../img/arrow-white.png") no-repeat;
+    }
+
+    &:hover {
+      background-color: white;
+    }
+
+    &:hover .filter-sort__select {
+      color: #323232;
+    }
+
+    &:hover::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      right: 12px;
+      width: 11px;
+      height: 9px;
+      margin-top: -2px;
+      background: url("../img/arrow-black.png") no-repeat;
+    }
+  }
+
+  &__select {
+    height: 36px;
+    width: 100%;
+    padding-left: 12px;
+    padding-right: 25px;
+    border-radius: 17px;
+    border: 0;
+    background-color: transparent;
+    font-family: $font-family;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    color: white;
+    outline: 0;
+    cursor: pointer;
+    /* Remove arrow fix */
+    appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    /* Remove arrow IE fix */
+    &::-ms-expand {
+      display: none;
+    }
+    /* Undo the Firefox inner focus ring */
+    &:focus:-moz-focusring {
+      color: transparent;
+      text-shadow: 0 0 0 #000;
+    }
+  }
+
+  &__option {
+    font-family: $font-family;
+    font-size: 14px;
+    line-height:16px;
+    font-weight: 400;
+    color: #323232;
+  }
+}

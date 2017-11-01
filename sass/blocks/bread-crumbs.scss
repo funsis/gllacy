@@ -1,0 +1,62 @@
+.bread-crumbs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  &__link {
+    display: inline-block;
+    position: relative;
+    margin-right: 20px;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    color: white;
+    text-decoration-color: $light-wihite;
+
+    &:hover {
+      color: #ffbc9e;
+      text-decoration-color: #a7a193;
+    }
+
+    &:active {
+      color: #ffbc9e;
+      text-decoration-color: #a7a193;
+    }
+
+    &:nth-child(n+2)::before {
+      content: "»";
+      display: inline;
+      position: absolute;
+      right: 100%;
+      margin-right: 6px;
+      font-family: $font-family;
+      font-size: 14px;
+      line-height: 16px;
+      font-weight: 400;
+      color: white;
+    }
+  }
+
+  &__current {
+    display: inline-block;
+    position: relative;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    color: white;
+    cursor: default;
+
+    &::before {
+      content: "»";
+      display: inline;
+      position: absolute;
+      right: 100%;
+      margin-right: 6px;
+      font-family: $font-family;
+      font-size: 14px;
+      line-height: 16px;
+      font-weight: 400;
+      color: white;
+    }
+  }
+}

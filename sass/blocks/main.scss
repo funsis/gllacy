@@ -1,0 +1,43 @@
+.main {
+
+  &__centerize {
+    margin: 0 auto;
+  }
+
+  &__row {
+    margin-bottom: 40px;
+  }
+
+  &__slider {
+    margin-bottom: 40px;
+  }
+
+  &__products {
+    margin-bottom: 40px;
+  }
+
+  &__advantages {
+    margin-bottom: 40px;
+  }
+
+  &__map {
+    position: relative;
+    margin-bottom: 40px;
+  }
+
+  &__bread-crumbs {
+    margin-bottom: 7px;
+  }
+
+  &__iner-page-title {
+    margin-bottom: 25px;
+  }
+
+  &__filters {
+    margin-bottom: 40px;
+  }
+
+  &__paginator {
+    margin-top: 80px;
+  }
+}

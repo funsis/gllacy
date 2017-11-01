@@ -1,0 +1,117 @@
+.product {
+  position: relative;
+  box-sizing: border-box;
+  width: 267/1150*100%;
+  margin-bottom: 40px;
+  text-align: center;
+
+  &__img-wrap {
+    position: relative;
+
+    &--hit::before {
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: 5;
+      width: 61px;
+      height: 61px;
+      border-radius: 100%;
+      background: url("../img/hit.jpg");
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+  }
+
+  &__price {
+    position: absolute;
+    left: 0;
+    bottom: 18px;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__title {
+    display: inline-block;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+    color: white;
+    text-decoration: outline;
+    text-decoration-color: $light-wihite;
+
+    &:hover {
+      color: #ffbc9e;
+      text-decoration-color: #a7a193;
+    }
+
+    &:active {
+      color: #ffbc9e;
+      text-decoration-color: #a7a193;
+    }
+  }
+
+  &__price {
+    font-size: 30px;
+    line-height: 45px;
+    font-weight: 700;
+    text-shadow: 0 1px 3px rgba(49, 50, 53, 0.5);
+  }
+
+  &__price-value {
+    font-size: 40px;
+    line-height: 45px;
+    font-weight: 700;
+  }
+
+  &__button-wrap {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    margin-top: 5px;
+    text-align: center;
+  }
+
+  &__button {
+    width: 200px;
+    padding: 10.5px 17px;
+  }
+
+  &:hover {
+    z-index: 2;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 112%;
+      height: 124%;
+      margin-left: -15px;
+      margin-top: -8px;
+      border-radius: $border-r-small;
+      background-color: $light-wihite;
+      box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    & .product__button-wrap {
+      display: block;
+    }
+
+    & .product__img,
+    & .product__title,
+    & .product__price,
+    & .product__button {
+      z-index: 2;
+    }
+
+  }
+}
