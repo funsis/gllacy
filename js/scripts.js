@@ -67,7 +67,7 @@ function init() {
     hintContent: 'Gllacy',
   }, {
     iconLayout: "default#image",
-    iconImageHref: "../img/map_placemark.png",
+    iconImageHref: "./img/map_placemark.png",
     iconImageSize: [80, 140],
     iconImageOffset: [-40, -140]
   });
