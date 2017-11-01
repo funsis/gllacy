@@ -43,7 +43,7 @@ gulp.task("js", function() {
   return gulp.src("js/scripts.js")
     .pipe(jshint())
     .pipe(jshint.reporter('default'))
-    .pipe(gulp.dest("build/js"))
+`    .pipe(gulp.dest("build/js"))`
     .pipe(uglify())
     .pipe(rename("scripts.min.js"))
     .pipe(gulp.dest("build/js"))
@@ -67,6 +67,7 @@ gulp.task("copy", function() {
   return gulp.src([
       "fonts/**/*.{woff,woff2}",
       "img/**",
+      "css/normilize.css",
       "*.html"
     ], {
       base: "."
